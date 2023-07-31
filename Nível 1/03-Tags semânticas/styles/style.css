@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+
+:root {
+    --fundo-principal: #322653;
+    --texto-principal: #FFD2D7;
+    --texto-secundario: #22D4FD;
+    --font-size: 1.5rem;
+    --font-weight: 400;
+    --font-titulo: 'Krona One', sans-serif;
+    --font-corpo: 'Montserrat', sans-serif;
+}
+
+*, h1, h2, p, a {
+    color: var(--texto-principal);
+    font-size: var(--font-size);
+    font-family: var(--font-corpo);
+    font-weight: var(--font-weight);
+}
+
+h1, h2 {
+    font-family: var(--font-titulo);
+}
+
+body {
+    background-color: var(--fundo-principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+strong {
+    color: var(--texto-secundario);
+}
+
+/* CONTEUDO */
+
+.cabecalho {
+    padding: 2% 0 0 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__item {
+    --font-weight: 600;
+    color: var(--texto-secundario);
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin: 5% 15%;
+}
+
+.conteudo__principal {
+    max-width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.conteudo__principal__titulo {
+    --font-size: 2.25rem;
+}
+
+.conteudo__principal__paragrafo {
+    /* --font-size: 1.5rem; */
+}
+
+.conteudo-paragrafo-destaque {
+    --texto-secundario: #9288F8;
+}
+
+.conteudo__principal__botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteudo__principal__botoes__subtitulo {
+    /* --font-size: 1.5rem; */
+}
+
+.conteudo__principal__botoes__botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    /* background-color: var(--texto-secundario); */
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    /* --font-size: 1.5rem; */
+    padding: 21.5px 0;
+    /* color:var(--fundo-principal); */
+    font-weight: 600;
+    border: 2px solid var(--texto-principal);
+    transition-property: color, background;
+    transition-duration: .2s;
+}
+
+.conteudo__principal__botoes__botao:hover {
+    background-color: rgba(129, 101, 207, 0.9);
+    color: #22D4FD;
+}
+
+.rodape {
+    background-color: var(--texto-secundario) ;
+}
+
+.rodape__texto {
+    --texto-principal: #000000;
+    padding: 24px;
+    text-align: center;
+}
